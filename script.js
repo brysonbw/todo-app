@@ -33,8 +33,8 @@ function addTodo(todo) {
             todoEl.classList.toggle('completed')
             updateLS()
         }) 
-
-        todoEl.addEventListener('contextmenu', (e) => {
+        
+        todoEl.addEventListener('dblclick', (e) => {
             e.preventDefault()
 
             todoEl.remove()
